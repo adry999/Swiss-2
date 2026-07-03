@@ -9,9 +9,11 @@ const isAdmin = computed(() => user.value?.role === 'admin')
 const links = computed(() => [
   { to: '/admin', label: 'Dashboard', exact: true },
   { to: '/admin/vehicles', label: 'Vehicule' },
+  { to: '/admin/leads', label: 'Solicitări' },
   ...(isAdmin.value
     ? [
         { to: '/admin/sellers', label: 'Vânzători' },
+        { to: '/admin/testimonials', label: 'Recenzii' },
         { to: '/admin/lookups', label: 'Mărci & dotări' },
         { to: '/admin/settings', label: 'Setări' },
       ]
