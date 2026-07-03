@@ -1,9 +1,25 @@
 <script setup lang="ts">
-const { t } = useI18n()
+const { t, locale, locales, setLocale } = useI18n()
 const localePath = useLocalePath()
-const { locale, locales, setLocale } = useI18n()
 
 const menuOpen = ref(false)
+
+const { data: site } = await useFetch('/api/site-settings')
+const company = computed(
+  () =>
+    (site.value?.company ?? {}) as {
+      name?: string
+      phones?: string[]
+      whatsapp?: string
+      workingHours?: string
+      address?: string
+    },
+)
+const waHref = computed(() =>
+  company.value.whatsapp
+    ? `https://wa.me/${company.value.whatsapp.replace(/[^0-9]/g, '')}`
+    : null,
+)
 
 const navLinks = computed(() => [
   { to: localePath('/'), label: t('nav.home') },
@@ -11,6 +27,7 @@ const navLinks = computed(() => [
   { to: localePath('/comanda'), label: t('nav.order') },
   { to: localePath('/leasing'), label: t('nav.leasing') },
   { to: localePath('/despre'), label: t('nav.about') },
+  { to: localePath('/recenzii'), label: t('nav.testimonials') },
   { to: localePath('/contact'), label: t('nav.contact') },
 ])
 </script>
@@ -24,7 +41,7 @@ const navLinks = computed(() => [
           Swiss<span class="text-primary">Cars</span>
         </NuxtLink>
 
-        <nav class="hidden items-center gap-6 lg:flex">
+        <nav class="hidden items-center gap-5 lg:flex">
           <NuxtLink
             v-for="link in navLinks"
             :key="link.to"
@@ -79,15 +96,38 @@ const navLinks = computed(() => [
     </main>
 
     <footer class="bg-charcoal py-10 text-white">
-      <div class="mx-auto max-w-7xl px-4">
-        <p class="text-lg font-extrabold">Swiss<span class="text-primary">Cars</span></p>
-        <p class="mt-2 text-sm text-neutral-400">{{ t('footer.tagline') }}</p>
+      <div class="mx-auto grid max-w-7xl gap-8 px-4 sm:grid-cols-3">
+        <div>
+          <p class="text-lg font-extrabold">Swiss<span class="text-primary">Cars</span></p>
+          <p class="mt-2 text-sm text-neutral-400">{{ t('footer.tagline') }}</p>
+        </div>
+        <nav class="space-y-2 text-sm">
+          <NuxtLink
+            v-for="link in navLinks"
+            :key="link.to"
+            :to="link.to"
+            class="block text-neutral-400 hover:text-white"
+          >
+            {{ link.label }}
+          </NuxtLink>
+        </nav>
+        <div class="text-sm text-neutral-400">
+          <p v-if="company.address">{{ company.address }}</p>
+          <p v-for="phone in company.phones ?? []" :key="phone" class="mt-1">
+            <a :href="`tel:${phone.replace(/\s/g, '')}`" class="font-bold text-white">{{ phone }}</a>
+          </p>
+          <p v-if="company.workingHours" class="mt-1">{{ company.workingHours }}</p>
+        </div>
       </div>
+      <p class="mx-auto mt-8 max-w-7xl px-4 text-xs text-neutral-500">
+        © {{ new Date().getFullYear() }} {{ company.name ?? 'Swiss Cars' }} — {{ t('footer.rights') }}
+      </p>
     </footer>
 
-    <!-- Floating WhatsApp button (number filled from settings later) -->
+    <!-- Floating WhatsApp button -->
     <a
-      href="https://wa.me/"
+      v-if="waHref"
+      :href="waHref"
       target="_blank"
       rel="noopener"
       class="fixed bottom-5 right-5 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg"
