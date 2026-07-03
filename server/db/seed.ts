@@ -5,6 +5,7 @@
  */
 import { drizzle } from 'drizzle-orm/postgres-js'
 import postgres from 'postgres'
+import { hashPassword } from '../utils/password'
 import { generateProductCode, generateVehicleSlug } from '../utils/vehicle-codes'
 import * as schema from './schema'
 
@@ -81,6 +82,19 @@ async function main() {
       .values({ code, sortOrder: i })
       .onConflictDoNothing()
   }
+
+  console.log('Seeding admin user…')
+  await db
+    .insert(schema.users)
+    .values({
+      email: 'admin@swisscars.md',
+      passwordHash: await hashPassword(
+        process.env.SEED_ADMIN_PASSWORD ?? 'admin12345',
+      ),
+      name: 'Administrator',
+      role: 'admin',
+    })
+    .onConflictDoNothing()
 
   const existing = await db.query.vehicles.findFirst()
   if (existing) {
