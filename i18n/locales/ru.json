@@ -1,0 +1,62 @@
+{
+  "nav": {
+    "home": "Главная",
+    "stock": "Авто в наличии",
+    "order": "Авто под заказ",
+    "leasing": "Лизинг",
+    "about": "О нас",
+    "testimonials": "Отзывы",
+    "contact": "Контакты"
+  },
+  "status": {
+    "in_stock": "В наличии",
+    "on_order": "Под заказ",
+    "reserved": "Зарезервирован",
+    "sold": "Продан"
+  },
+  "vehicle": {
+    "price_estimated": "Ориентировочная цена",
+    "mileage": "Пробег",
+    "fuel": "Топливо",
+    "transmission": "Коробка передач",
+    "year": "Год"
+  },
+  "fuel": {
+    "petrol": "Бензин",
+    "diesel": "Дизель",
+    "hybrid": "Гибрид",
+    "plugin_hybrid": "Подключаемый гибрид",
+    "electric": "Электро",
+    "lpg": "Газ"
+  },
+  "transmission_types": {
+    "manual": "Механика",
+    "automatic": "Автомат"
+  },
+  "features": {
+    "climate_control": "Климат-контроль",
+    "leather_seats": "Кожаный салон",
+    "navigation": "Навигация",
+    "parking_sensors": "Парктроники",
+    "led_lights": "LED-фары",
+    "panoramic_roof": "Панорамная крыша",
+    "heated_seats": "Подогрев сидений",
+    "rear_camera": "Камера заднего вида",
+    "cruise_control": "Круиз-контроль",
+    "keyless_entry": "Бесключевой доступ"
+  },
+  "cta": {
+    "call_me": "Перезвоните мне",
+    "whatsapp": "Написать в WhatsApp",
+    "request_import": "Заказать импорт",
+    "view_all": "Смотреть все"
+  },
+  "footer": {
+    "tagline": "Автомобили из Швейцарии — проверенные и доставленные в Молдову."
+  },
+  "home": {
+    "title": "Swiss Cars — Автомобили из Швейцарии",
+    "hero_title": "Швейцарское качество, доставка в Молдову",
+    "hero_subtitle": "Выберите авто из наличия или закажите нужную модель — мы найдём, проверим и доставим."
+  }
+}

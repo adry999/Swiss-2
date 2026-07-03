@@ -1,0 +1,62 @@
+{
+  "nav": {
+    "home": "Home",
+    "stock": "Cars in stock",
+    "order": "Order a car",
+    "leasing": "Leasing",
+    "about": "About us",
+    "testimonials": "Testimonials",
+    "contact": "Contact"
+  },
+  "status": {
+    "in_stock": "In stock",
+    "on_order": "On order",
+    "reserved": "Reserved",
+    "sold": "Sold"
+  },
+  "vehicle": {
+    "price_estimated": "Estimated price",
+    "mileage": "Mileage",
+    "fuel": "Fuel",
+    "transmission": "Transmission",
+    "year": "Year"
+  },
+  "fuel": {
+    "petrol": "Petrol",
+    "diesel": "Diesel",
+    "hybrid": "Hybrid",
+    "plugin_hybrid": "Plug-in hybrid",
+    "electric": "Electric",
+    "lpg": "LPG"
+  },
+  "transmission_types": {
+    "manual": "Manual",
+    "automatic": "Automatic"
+  },
+  "features": {
+    "climate_control": "Climate control",
+    "leather_seats": "Leather seats",
+    "navigation": "Navigation",
+    "parking_sensors": "Parking sensors",
+    "led_lights": "LED headlights",
+    "panoramic_roof": "Panoramic roof",
+    "heated_seats": "Heated seats",
+    "rear_camera": "Rear-view camera",
+    "cruise_control": "Cruise control",
+    "keyless_entry": "Keyless entry"
+  },
+  "cta": {
+    "call_me": "Call me back",
+    "whatsapp": "Message on WhatsApp",
+    "request_import": "Request import",
+    "view_all": "View all"
+  },
+  "footer": {
+    "tagline": "Cars imported from Switzerland — verified and delivered to Moldova."
+  },
+  "home": {
+    "title": "Swiss Cars — Cars from Switzerland",
+    "hero_title": "Swiss-quality cars, delivered to Moldova",
+    "hero_subtitle": "Pick from stock or order the model you want — we source, verify and deliver it."
+  }
+}

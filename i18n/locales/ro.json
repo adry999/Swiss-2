@@ -1,0 +1,62 @@
+{
+  "nav": {
+    "home": "Acasă",
+    "stock": "Stoc auto",
+    "order": "Comandă auto",
+    "leasing": "Leasing",
+    "about": "Despre noi",
+    "testimonials": "Recenzii",
+    "contact": "Contact"
+  },
+  "status": {
+    "in_stock": "În stoc",
+    "on_order": "La comandă",
+    "reserved": "Rezervat",
+    "sold": "Vândut"
+  },
+  "vehicle": {
+    "price_estimated": "Preț estimativ",
+    "mileage": "Rulaj",
+    "fuel": "Combustibil",
+    "transmission": "Cutie de viteze",
+    "year": "An"
+  },
+  "fuel": {
+    "petrol": "Benzină",
+    "diesel": "Diesel",
+    "hybrid": "Hibrid",
+    "plugin_hybrid": "Hibrid plug-in",
+    "electric": "Electric",
+    "lpg": "GPL"
+  },
+  "transmission_types": {
+    "manual": "Manuală",
+    "automatic": "Automată"
+  },
+  "features": {
+    "climate_control": "Climatizare",
+    "leather_seats": "Scaune din piele",
+    "navigation": "Navigație",
+    "parking_sensors": "Senzori de parcare",
+    "led_lights": "Faruri LED",
+    "panoramic_roof": "Trapă panoramică",
+    "heated_seats": "Scaune încălzite",
+    "rear_camera": "Cameră marșarier",
+    "cruise_control": "Pilot automat",
+    "keyless_entry": "Acces fără cheie"
+  },
+  "cta": {
+    "call_me": "Sună-mă înapoi",
+    "whatsapp": "Scrie pe WhatsApp",
+    "request_import": "Solicită import",
+    "view_all": "Vezi toate"
+  },
+  "footer": {
+    "tagline": "Mașini importate din Elveția, verificate și livrate în Moldova."
+  },
+  "home": {
+    "title": "Swiss Cars — Mașini din Elveția",
+    "hero_title": "Mașini de calitate elvețiană, livrate în Moldova",
+    "hero_subtitle": "Alege din stoc sau comandă modelul dorit — noi îl găsim, verificăm și livrăm."
+  }
+}
