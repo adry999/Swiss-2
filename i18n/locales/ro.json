@@ -190,6 +190,11 @@
     "title": "Recenzii",
     "subtitle": "Experiențele clienților noștri"
   },
+  "favorites": {
+    "title": "Favorite",
+    "empty": "Nu ai salvat încă niciun vehicul.",
+    "toggle": "Adaugă la favorite"
+  },
   "contact": {
     "title": "Contact",
     "address": "Adresă",

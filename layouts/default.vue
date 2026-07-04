@@ -3,6 +3,15 @@ const { t, locale, locales, setLocale } = useI18n()
 const localePath = useLocalePath()
 
 const menuOpen = ref(false)
+const favorites = useFavoritesStore()
+
+// hreflang alternates + canonical + og:locale for every public page
+const i18nHead = useLocaleHead()
+useHead(() => ({
+  htmlAttrs: { lang: i18nHead.value.htmlAttrs?.lang },
+  link: i18nHead.value.link ?? [],
+  meta: i18nHead.value.meta ?? [],
+}))
 
 const { data: site } = await useFetch('/api/site-settings')
 const company = computed(
@@ -20,6 +29,33 @@ const waHref = computed(() =>
     ? `https://wa.me/${company.value.whatsapp.replace(/[^0-9]/g, '')}`
     : null,
 )
+
+// Analytics from settings (public pages only)
+const analytics = computed(
+  () => (site.value?.analytics ?? {}) as { gtagId?: string; metaPixelId?: string },
+)
+useHead(() => ({
+  script: [
+    ...(analytics.value.gtagId
+      ? [
+          {
+            src: `https://www.googletagmanager.com/gtag/js?id=${analytics.value.gtagId}`,
+            async: true,
+          },
+          {
+            innerHTML: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config','${analytics.value.gtagId}');`,
+          },
+        ]
+      : []),
+    ...(analytics.value.metaPixelId
+      ? [
+          {
+            innerHTML: `!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','${analytics.value.metaPixelId}');fbq('track','PageView');`,
+          },
+        ]
+      : []),
+  ],
+}))
 
 const navLinks = computed(() => [
   { to: localePath('/'), label: t('nav.home') },
@@ -53,6 +89,22 @@ const navLinks = computed(() => [
         </nav>
 
         <div class="flex items-center gap-3">
+          <!-- Favorites -->
+          <NuxtLink
+            :to="localePath('/favorite')"
+            class="relative flex h-9 w-9 items-center justify-center text-xl"
+            :class="favorites.count ? 'text-primary' : 'text-neutral-500'"
+            :aria-label="t('favorites.title')"
+          >
+            {{ favorites.count ? '♥' : '♡' }}
+            <span
+              v-if="favorites.count"
+              class="absolute -right-0.5 -top-0.5 flex h-4 min-w-4 items-center justify-center rounded-full bg-primary px-1 text-[10px] font-bold text-white"
+            >
+              {{ favorites.count }}
+            </span>
+          </NuxtLink>
+
           <!-- Language toggle -->
           <div class="flex items-center gap-1 text-xs font-bold uppercase">
             <button

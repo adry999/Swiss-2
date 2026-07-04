@@ -190,6 +190,11 @@
     "title": "Testimonials",
     "subtitle": "Our clients' experiences"
   },
+  "favorites": {
+    "title": "Favorites",
+    "empty": "You haven't saved any vehicles yet.",
+    "toggle": "Add to favorites"
+  },
   "contact": {
     "title": "Contact",
     "address": "Address",

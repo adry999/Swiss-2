@@ -21,6 +21,8 @@ export default defineNuxtConfig({
   i18n: {
     defaultLocale: 'ro',
     strategy: 'prefix_except_default',
+    // Enables absolute hreflang/canonical alternate links via useLocaleHead
+    baseUrl: 'https://swisscars.md',
     locales: [
       { code: 'ro', language: 'ro-RO', name: 'Română', file: 'ro.json' },
       { code: 'ru', language: 'ru-RU', name: 'Русский', file: 'ru.json' },

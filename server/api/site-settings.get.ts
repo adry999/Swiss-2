@@ -8,5 +8,6 @@ export default defineEventHandler(async () => {
     company: all.company ?? {},
     financing: all.financing_calculator ?? {},
     leasingPartners: all.leasing_partners ?? [],
+    analytics: all.analytics ?? {},
   }
 })

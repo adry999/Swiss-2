@@ -10,11 +10,25 @@ export default defineEventHandler(async (event) => {
 
   const conditions = []
 
+  // Favorites lookup: explicit id list, any status (sold favorites stay visible)
+  const idsParam = typeof q.ids === 'string' ? q.ids : ''
+  const ids = idsParam
+    .split(',')
+    .filter((s) =>
+      /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(s),
+    )
+    .slice(0, 50)
+  if (ids.length) {
+    conditions.push(inArray(schema.vehicles.id, ids))
+  }
+
   const status = q.status as string | undefined
-  if (status && (PUBLIC_STATUSES as readonly string[]).includes(status)) {
-    conditions.push(eq(schema.vehicles.status, status as never))
-  } else {
-    conditions.push(inArray(schema.vehicles.status, [...PUBLIC_STATUSES]))
+  if (!ids.length) {
+    if (status && (PUBLIC_STATUSES as readonly string[]).includes(status)) {
+      conditions.push(eq(schema.vehicles.status, status as never))
+    } else {
+      conditions.push(inArray(schema.vehicles.status, [...PUBLIC_STATUSES]))
+    }
   }
 
   if (q.makeId) conditions.push(eq(schema.vehicles.makeId, Number(q.makeId)))

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 interface VehicleItem {
+  id: string
   slug: string
   make: string
   model: string
@@ -18,6 +19,7 @@ const props = defineProps<{ vehicle: VehicleItem }>()
 
 const { t } = useI18n()
 const localePath = useLocalePath()
+const favorites = useFavoritesStore()
 
 const badgeClass = computed(
   () =>
@@ -58,6 +60,15 @@ const image = computed(
       <span class="absolute left-3 top-3" :class="badgeClass">
         {{ t(`status.${vehicle.status}`) }}
       </span>
+      <button
+        type="button"
+        class="absolute right-3 top-3 flex h-9 w-9 items-center justify-center rounded-full bg-white/90 text-lg shadow transition-transform hover:scale-110"
+        :class="favorites.has(vehicle.id) ? 'text-primary' : 'text-neutral-500'"
+        :aria-label="t('favorites.toggle')"
+        @click.prevent="favorites.toggle(vehicle.id)"
+      >
+        {{ favorites.has(vehicle.id) ? '♥' : '♡' }}
+      </button>
     </div>
     <div class="p-4">
       <h3 class="truncate font-bold">
