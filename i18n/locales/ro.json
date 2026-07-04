@@ -1,0 +1,206 @@
+{
+  "nav": {
+    "home": "Acasă",
+    "stock": "Stoc auto",
+    "order": "Comandă auto",
+    "leasing": "Leasing",
+    "about": "Despre noi",
+    "testimonials": "Recenzii",
+    "contact": "Contact"
+  },
+  "status": {
+    "in_stock": "În stoc",
+    "on_order": "La comandă",
+    "reserved": "Rezervat",
+    "sold": "Vândut"
+  },
+  "vehicle": {
+    "price_estimated": "Preț estimativ",
+    "mileage": "Rulaj",
+    "fuel": "Combustibil",
+    "transmission": "Cutie de viteze",
+    "drivetrain": "Tracțiune",
+    "body": "Caroserie",
+    "power": "Putere",
+    "engine": "Motor",
+    "color": "Culoare",
+    "origin": "Țara de origine",
+    "year": "An",
+    "code": "Cod produs"
+  },
+  "fuel": {
+    "petrol": "Benzină",
+    "diesel": "Diesel",
+    "hybrid": "Hibrid",
+    "plugin_hybrid": "Hibrid plug-in",
+    "electric": "Electric",
+    "lpg": "GPL"
+  },
+  "transmission_types": {
+    "manual": "Manuală",
+    "automatic": "Automată"
+  },
+  "drivetrain_types": {
+    "fwd": "Față",
+    "rwd": "Spate",
+    "awd": "4x4 / AWD"
+  },
+  "body_types": {
+    "sedan": "Sedan",
+    "hatchback": "Hatchback",
+    "wagon": "Break",
+    "suv": "SUV",
+    "crossover": "Crossover",
+    "coupe": "Coupé",
+    "cabriolet": "Cabriolet",
+    "minivan": "Minivan",
+    "pickup": "Pickup",
+    "van": "Van"
+  },
+  "features": {
+    "climate_control": "Climatizare",
+    "leather_seats": "Scaune din piele",
+    "navigation": "Navigație",
+    "parking_sensors": "Senzori de parcare",
+    "led_lights": "Faruri LED",
+    "panoramic_roof": "Trapă panoramică",
+    "heated_seats": "Scaune încălzite",
+    "rear_camera": "Cameră marșarier",
+    "cruise_control": "Pilot automat",
+    "keyless_entry": "Acces fără cheie"
+  },
+  "cta": {
+    "call_me": "Sună-mă înapoi",
+    "whatsapp": "Scrie pe WhatsApp",
+    "request_import": "Solicită import",
+    "view_all": "Vezi toate",
+    "details": "Detalii"
+  },
+  "footer": {
+    "tagline": "Mașini importate din Elveția, verificate și livrate în Moldova.",
+    "rights": "Toate drepturile rezervate."
+  },
+  "home": {
+    "title": "Swiss Cars — Mașini din Elveția",
+    "hero_title": "Mașini de calitate elvețiană, livrate în Moldova",
+    "hero_subtitle": "Alege din stoc sau comandă modelul dorit — noi îl găsim, verificăm și livrăm.",
+    "search_make": "Marcă",
+    "search_model": "Model",
+    "search_price": "Preț maxim",
+    "search_any": "Oricare",
+    "search_btn": "Caută",
+    "how_title": "Cum funcționează",
+    "how_stock_title": "Cumpără din stoc",
+    "how_stock_text": "Mașini aflate deja în Moldova, verificate, cu preț fix și galerie foto completă. Vezi mașina azi, pleci cu ea mâine.",
+    "how_order_title": "Comandă din Elveția",
+    "how_order_text": "Ne spui ce model vrei. Noi îl găsim în Elveția, îl verificăm tehnic, îl transportăm și ne ocupăm de acte. Livrare în 2–5 săptămâni.",
+    "featured_title": "Ultimele vehicule",
+    "trust_years": "ani de experiență",
+    "trust_imported": "mașini importate",
+    "trust_origin": "origine elvețiană verificată",
+    "testimonials_title": "Ce spun clienții",
+    "leasing_title": "Finanțare & leasing",
+    "leasing_text": "Calculează rata lunară și află condițiile partenerilor noștri de leasing.",
+    "leasing_cta": "Calculează rata",
+    "faq_title": "Întrebări frecvente",
+    "faq": [
+      {
+        "q": "De ce mașini din Elveția?",
+        "a": "Elveția are drumuri excelente, controale tehnice stricte și un istoric transparent al mașinilor. Rulajul este real, iar starea tehnică este de regulă peste media pieței europene."
+      },
+      {
+        "q": "Cât durează livrarea unei mașini la comandă?",
+        "a": "În medie 2–5 săptămâni, în funcție de model: căutare și verificare în Elveția, transport și perfectarea actelor în Moldova."
+      },
+      {
+        "q": "Pot verifica istoricul mașinii?",
+        "a": "Da. Pentru fiecare mașină oferim VIN-ul și, la cerere, raport de istoric și verificare tehnică independentă înainte de cumpărare."
+      },
+      {
+        "q": "Ce garanții primesc?",
+        "a": "Contract de vânzare-cumpărare, istoric verificat, iar pentru mașinile la comandă — inspecție tehnică documentată înainte de transport."
+      }
+    ]
+  },
+  "catalog": {
+    "title": "Stoc auto",
+    "subtitle": "Mașini în stoc și la comandă din Elveția",
+    "results": "{n} vehicule",
+    "filters": "Filtre",
+    "reset": "Resetează",
+    "apply": "Aplică filtrele",
+    "no_results": "Niciun vehicul nu corespunde filtrelor.",
+    "sort_newest": "Cele mai noi",
+    "sort_price_asc": "Preț crescător",
+    "sort_price_desc": "Preț descrescător",
+    "sort_year_desc": "An fabricație",
+    "all_statuses": "Toate",
+    "price_from": "Preț de la",
+    "price_to": "până la",
+    "year_from": "An de la",
+    "year_to": "până la",
+    "mileage_max": "Rulaj maxim",
+    "any": "Oricare"
+  },
+  "detail": {
+    "specs": "Specificații",
+    "description": "Descriere",
+    "features": "Dotări",
+    "history_note": "Istoric verificat — raport disponibil la cerere",
+    "monthly_from": "de la {rate}/lună",
+    "est_delivery": "Livrare estimată: ~{days} zile",
+    "est_price_note": "Preț estimativ final, cu transport și acte incluse",
+    "request_import": "Solicită acest model",
+    "similar": "Vehicule similare",
+    "seller": "Consultantul tău",
+    "delivery_badge": "La comandă din Elveția"
+  },
+  "form": {
+    "name": "Nume",
+    "phone": "Telefon",
+    "email": "Email (opțional)",
+    "message": "Mesaj",
+    "budget": "Buget (EUR)",
+    "links": "Linkuri de referință (999.md, autoscout24…)",
+    "send": "Trimite",
+    "sending": "Se trimite…",
+    "success": "Mulțumim! Te contactăm în curând.",
+    "error": "A apărut o eroare. Încearcă din nou sau sună-ne.",
+    "callback_title": "Îți răspundem la orice întrebare",
+    "order_title": "Comandă o mașină din Elveția",
+    "order_subtitle": "Spune-ne ce model cauți — marca, modelul, anul, bugetul. Revenim cu oferte concrete în 24–48 de ore.",
+    "preferences": "Preferințe (an, motor, dotări…)"
+  },
+  "leasing": {
+    "title": "Leasing & finanțare",
+    "subtitle": "Calculează rata lunară estimativă",
+    "price": "Prețul mașinii (EUR)",
+    "down_payment": "Avans ({pct}%)",
+    "term": "Termen (luni)",
+    "monthly": "Rata lunară estimativă",
+    "note": "Calcul orientativ. Condițiile finale sunt stabilite de partenerul de finanțare.",
+    "partners_title": "Parteneri de finanțare"
+  },
+  "about": {
+    "title": "Despre Swiss Cars",
+    "text": "De peste 10 ani importăm mașini din Elveția pentru clienți din Moldova. Fiecare mașină este verificată tehnic înainte de cumpărare, iar istoricul este transparent și documentat. Ne ocupăm de tot procesul: căutare, verificare, transport și înmatriculare.",
+    "team_title": "Echipa noastră"
+  },
+  "testimonials_page": {
+    "title": "Recenzii",
+    "subtitle": "Experiențele clienților noștri"
+  },
+  "favorites": {
+    "title": "Favorite",
+    "empty": "Nu ai salvat încă niciun vehicul.",
+    "toggle": "Adaugă la favorite"
+  },
+  "contact": {
+    "title": "Contact",
+    "address": "Adresă",
+    "phones": "Telefoane",
+    "hours": "Program",
+    "email": "Email",
+    "form_title": "Scrie-ne un mesaj"
+  }
+}

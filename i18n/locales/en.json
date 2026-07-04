@@ -1,0 +1,206 @@
+{
+  "nav": {
+    "home": "Home",
+    "stock": "Cars in stock",
+    "order": "Order a car",
+    "leasing": "Leasing",
+    "about": "About us",
+    "testimonials": "Testimonials",
+    "contact": "Contact"
+  },
+  "status": {
+    "in_stock": "In stock",
+    "on_order": "On order",
+    "reserved": "Reserved",
+    "sold": "Sold"
+  },
+  "vehicle": {
+    "price_estimated": "Estimated price",
+    "mileage": "Mileage",
+    "fuel": "Fuel",
+    "transmission": "Transmission",
+    "drivetrain": "Drivetrain",
+    "body": "Body type",
+    "power": "Power",
+    "engine": "Engine",
+    "color": "Color",
+    "origin": "Country of origin",
+    "year": "Year",
+    "code": "Product code"
+  },
+  "fuel": {
+    "petrol": "Petrol",
+    "diesel": "Diesel",
+    "hybrid": "Hybrid",
+    "plugin_hybrid": "Plug-in hybrid",
+    "electric": "Electric",
+    "lpg": "LPG"
+  },
+  "transmission_types": {
+    "manual": "Manual",
+    "automatic": "Automatic"
+  },
+  "drivetrain_types": {
+    "fwd": "Front-wheel",
+    "rwd": "Rear-wheel",
+    "awd": "All-wheel / AWD"
+  },
+  "body_types": {
+    "sedan": "Sedan",
+    "hatchback": "Hatchback",
+    "wagon": "Wagon",
+    "suv": "SUV",
+    "crossover": "Crossover",
+    "coupe": "Coupé",
+    "cabriolet": "Cabriolet",
+    "minivan": "Minivan",
+    "pickup": "Pickup",
+    "van": "Van"
+  },
+  "features": {
+    "climate_control": "Climate control",
+    "leather_seats": "Leather seats",
+    "navigation": "Navigation",
+    "parking_sensors": "Parking sensors",
+    "led_lights": "LED headlights",
+    "panoramic_roof": "Panoramic roof",
+    "heated_seats": "Heated seats",
+    "rear_camera": "Rear-view camera",
+    "cruise_control": "Cruise control",
+    "keyless_entry": "Keyless entry"
+  },
+  "cta": {
+    "call_me": "Call me back",
+    "whatsapp": "Message on WhatsApp",
+    "request_import": "Request import",
+    "view_all": "View all",
+    "details": "Details"
+  },
+  "footer": {
+    "tagline": "Cars imported from Switzerland — verified and delivered to Moldova.",
+    "rights": "All rights reserved."
+  },
+  "home": {
+    "title": "Swiss Cars — Cars from Switzerland",
+    "hero_title": "Swiss-quality cars, delivered to Moldova",
+    "hero_subtitle": "Pick from stock or order the model you want — we source, verify and deliver it.",
+    "search_make": "Make",
+    "search_model": "Model",
+    "search_price": "Max price",
+    "search_any": "Any",
+    "search_btn": "Search",
+    "how_title": "How it works",
+    "how_stock_title": "Buy from stock",
+    "how_stock_text": "Cars already in Moldova, verified, with fixed prices and full photo galleries. See the car today, drive it tomorrow.",
+    "how_order_title": "Order from Switzerland",
+    "how_order_text": "Tell us the model you want. We find it in Switzerland, inspect it, transport it and handle the paperwork. Delivery in 2–5 weeks.",
+    "featured_title": "Latest vehicles",
+    "trust_years": "years of experience",
+    "trust_imported": "cars imported",
+    "trust_origin": "verified Swiss origin",
+    "testimonials_title": "What clients say",
+    "leasing_title": "Financing & leasing",
+    "leasing_text": "Calculate your monthly rate and see our leasing partners' terms.",
+    "leasing_cta": "Calculate rate",
+    "faq_title": "Frequently asked questions",
+    "faq": [
+      {
+        "q": "Why cars from Switzerland?",
+        "a": "Switzerland has excellent roads, strict technical inspections and transparent vehicle history. Mileage is genuine and the technical condition is usually above the European average."
+      },
+      {
+        "q": "How long does an on-order delivery take?",
+        "a": "On average 2–5 weeks depending on the model: sourcing and inspection in Switzerland, transport and registration paperwork in Moldova."
+      },
+      {
+        "q": "Can I verify the car's history?",
+        "a": "Yes. We provide the VIN for every car and, on request, a history report and an independent technical inspection before purchase."
+      },
+      {
+        "q": "What guarantees do I get?",
+        "a": "A sales contract, verified history, and for on-order cars — a documented technical inspection before transport."
+      }
+    ]
+  },
+  "catalog": {
+    "title": "Cars",
+    "subtitle": "Cars in stock and on order from Switzerland",
+    "results": "{n} vehicles",
+    "filters": "Filters",
+    "reset": "Reset",
+    "apply": "Apply filters",
+    "no_results": "No vehicles match your filters.",
+    "sort_newest": "Newest first",
+    "sort_price_asc": "Price: low to high",
+    "sort_price_desc": "Price: high to low",
+    "sort_year_desc": "Year",
+    "all_statuses": "All",
+    "price_from": "Price from",
+    "price_to": "to",
+    "year_from": "Year from",
+    "year_to": "to",
+    "mileage_max": "Max mileage",
+    "any": "Any"
+  },
+  "detail": {
+    "specs": "Specifications",
+    "description": "Description",
+    "features": "Features",
+    "history_note": "Verified history — report available on request",
+    "monthly_from": "from {rate}/mo",
+    "est_delivery": "Estimated delivery: ~{days} days",
+    "est_price_note": "Estimated final price, transport and paperwork included",
+    "request_import": "Request this model",
+    "similar": "Similar vehicles",
+    "seller": "Your consultant",
+    "delivery_badge": "On order from Switzerland"
+  },
+  "form": {
+    "name": "Name",
+    "phone": "Phone",
+    "email": "Email (optional)",
+    "message": "Message",
+    "budget": "Budget (EUR)",
+    "links": "Reference links (999.md, autoscout24…)",
+    "send": "Send",
+    "sending": "Sending…",
+    "success": "Thank you! We'll contact you shortly.",
+    "error": "Something went wrong. Try again or give us a call.",
+    "callback_title": "We'll answer any question",
+    "order_title": "Order a car from Switzerland",
+    "order_subtitle": "Tell us what you're looking for — make, model, year, budget. We come back with concrete offers within 24–48 hours.",
+    "preferences": "Preferences (year, engine, features…)"
+  },
+  "leasing": {
+    "title": "Leasing & financing",
+    "subtitle": "Calculate your estimated monthly rate",
+    "price": "Car price (EUR)",
+    "down_payment": "Down payment ({pct}%)",
+    "term": "Term (months)",
+    "monthly": "Estimated monthly rate",
+    "note": "Indicative calculation. Final terms are set by the financing partner.",
+    "partners_title": "Financing partners"
+  },
+  "about": {
+    "title": "About Swiss Cars",
+    "text": "For over 10 years we have been importing cars from Switzerland for clients in Moldova. Every car is technically inspected before purchase, with a transparent, documented history. We handle the entire process: sourcing, inspection, transport and registration.",
+    "team_title": "Our team"
+  },
+  "testimonials_page": {
+    "title": "Testimonials",
+    "subtitle": "Our clients' experiences"
+  },
+  "favorites": {
+    "title": "Favorites",
+    "empty": "You haven't saved any vehicles yet.",
+    "toggle": "Add to favorites"
+  },
+  "contact": {
+    "title": "Contact",
+    "address": "Address",
+    "phones": "Phones",
+    "hours": "Working hours",
+    "email": "Email",
+    "form_title": "Write us a message"
+  }
+}
