@@ -179,7 +179,9 @@
     "term": "Term (months)",
     "monthly": "Estimated monthly rate",
     "note": "Indicative calculation. Final terms are set by the financing partner.",
-    "partners_title": "Financing partners"
+    "partners_title": "Financing partners",
+    "request_title": "Request a financing offer",
+    "request_subtitle": "Leave your details and we'll prepare a personalized offer from our partners."
   },
   "about": {
     "title": "About Swiss Cars",

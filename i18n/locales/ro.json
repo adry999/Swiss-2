@@ -179,7 +179,9 @@
     "term": "Termen (luni)",
     "monthly": "Rata lunară estimativă",
     "note": "Calcul orientativ. Condițiile finale sunt stabilite de partenerul de finanțare.",
-    "partners_title": "Parteneri de finanțare"
+    "partners_title": "Parteneri de finanțare",
+    "request_title": "Solicită o ofertă de finanțare",
+    "request_subtitle": "Lasă-ne datele tale și îți pregătim o ofertă personalizată de la partenerii noștri."
   },
   "about": {
     "title": "Despre Swiss Cars",

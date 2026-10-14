@@ -48,5 +48,16 @@ const company = computed(
         <LeadForm type="contact" class="mt-4" />
       </div>
     </div>
+
+    <!-- Map (shown once the company address is set in admin settings) -->
+    <div v-if="company.address" class="card mt-6 overflow-hidden">
+      <iframe
+        :src="`https://www.google.com/maps?q=${encodeURIComponent(company.address)}&output=embed`"
+        class="h-72 w-full border-0 sm:h-96"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        :title="t('contact.address')"
+      />
+    </div>
   </div>
 </template>

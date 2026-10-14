@@ -93,5 +93,12 @@ const partners = computed(() => (site.value?.leasingPartners as Partner[]) ?? []
         </div>
       </div>
     </template>
+
+    <!-- Financing request -->
+    <div class="card mt-10 p-5 sm:p-8">
+      <h2 class="text-xl font-extrabold">{{ t('leasing.request_title') }}</h2>
+      <p class="mt-1 text-sm text-neutral-500">{{ t('leasing.request_subtitle') }}</p>
+      <LeadForm type="financing" show-budget class="mt-5 max-w-lg" />
+    </div>
   </div>
 </template>
